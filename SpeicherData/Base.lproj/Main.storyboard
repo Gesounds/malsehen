@@ -53,11 +53,110 @@
                             <outlet property="delegate" destination="dNX-V7-PLc" id="v7m-3e-3P4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="D0b-sc-Jdz"/>
+                    <navigationItem key="navigationItem" id="D0b-sc-Jdz">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="9DH-gC-OUC">
+                            <connections>
+                                <segue destination="B8a-76-Lit" kind="presentation" identifier="AddNewContactSegue" modalTransitionStyle="coverVertical" id="g2p-nQ-Pjf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QeU-qg-ERd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2524" y="-544.67766116941539"/>
+        </scene>
+        <!--Add New Contact Table View Controller-->
+        <scene sceneID="Jyq-c5-u1P">
+            <objects>
+                <tableViewController id="PTS-0P-TEz" customClass="AddNewContactTableViewController" customModule="SpeicherData" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="n4v-Q3-3IB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Enter Contact Information" footerTitle="Press Cancel or Save to return to the list" id="Dmc-da-eXj">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="H9s-Il-zCB">
+                                        <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H9s-Il-zCB" id="oOR-Dy-F8x">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter First Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="67y-So-iPm">
+                                                    <rect key="frame" x="8" y="7" width="359" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="iQ1-s7-Egj">
+                                        <rect key="frame" x="0.0" y="100" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iQ1-s7-Egj" id="Q4T-XZ-NXR">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Last Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ohg-Vh-C7K">
+                                                    <rect key="frame" x="8" y="7" width="359" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AMr-Cq-Jtg">
+                                        <rect key="frame" x="0.0" y="144" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AMr-Cq-Jtg" id="MIB-ra-avw">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email Address" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xJM-MG-2zJ">
+                                                    <rect key="frame" x="8" y="7" width="359" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="PTS-0P-TEz" id="0aG-5m-S6s"/>
+                            <outlet property="delegate" destination="PTS-0P-TEz" id="TG1-9K-GBF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="lEk-qt-NNm">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="eIO-rD-kqZ">
+                            <connections>
+                                <segue destination="iD6-Rg-NI4" kind="unwind" identifier="CancelSegue" unwindAction="cancelWithNewContact:" id="wrS-fh-e8G"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="7S4-2I-qH8">
+                            <connections>
+                                <segue destination="iD6-Rg-NI4" kind="unwind" identifier="SaveSegue" unwindAction="saveWithSaveSegue:" id="nbf-pp-Bcf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="txtEmailAddress" destination="xJM-MG-2zJ" id="Fog-m1-F71"/>
+                        <outlet property="txtFirstName" destination="67y-So-iPm" id="qcA-L6-Yh7"/>
+                        <outlet property="txtLastName" destination="ohg-Vh-C7K" id="Sfu-PQ-SWu"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eU5-iM-aRW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="iD6-Rg-NI4" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4223.1999999999998" y="-1084.4077961019491"/>
         </scene>
         <!--Contacts Details Table View Controller-->
         <scene sceneID="cm9-lm-7i8">
@@ -72,7 +171,7 @@
                             <tableViewSection headerTitle="Here are the details" footerTitle="Press Back to return to the list" id="VjN-DK-0LO">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="8Ir-d3-mNI" style="IBUITableViewCellStyleDefault" id="Tti-eF-Gzm">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="56" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tti-eF-Gzm" id="qVz-XC-GVE">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -89,7 +188,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="s5h-7T-RLt" style="IBUITableViewCellStyleDefault" id="gw3-Fo-Tzp">
-                                        <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="100" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gw3-Fo-Tzp" id="Vsx-cI-obH">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -106,7 +205,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="9E3-AE-1qP" style="IBUITableViewCellStyleDefault" id="GdI-Rk-eA4">
-                                        <rect key="frame" x="0.0" y="143.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="144" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GdI-Rk-eA4" id="bNO-4I-KiL">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -138,7 +237,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0c-Rp-aWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3273" y="-546"/>
+            <point key="canvasLocation" x="3284" y="-226"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vy6-pC-8Tc">
@@ -157,6 +256,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CTQ-YG-pgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1584.8" y="-544.67766116941539"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="C13-rd-dsd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="B8a-76-Lit" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZEg-nN-L2x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PTS-0P-TEz" kind="relationship" relationship="rootViewController" id="p08-yj-xMk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6rS-0p-E9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3284" y="-1084.4077961019491"/>
         </scene>
     </scenes>
 </document>

@@ -16,6 +16,7 @@
 		8B1657B71EB59AC800DE254D /* ContactPersonDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1657B61EB59AC800DE254D /* ContactPersonDataSource.swift */; };
 		8B1657B91EB5A05C00DE254D /* AdressBookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1657B81EB5A05C00DE254D /* AdressBookTableViewController.swift */; };
 		8B1657BB1EB5AA9500DE254D /* ContactsDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1657BA1EB5AA9500DE254D /* ContactsDetailsTableViewController.swift */; };
+		8B1657BD1EB5B2F400DE254D /* AddNewContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1657BC1EB5B2F400DE254D /* AddNewContactTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8B1657B61EB59AC800DE254D /* ContactPersonDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactPersonDataSource.swift; sourceTree = "<group>"; };
 		8B1657B81EB5A05C00DE254D /* AdressBookTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdressBookTableViewController.swift; path = ../AdressBookTableViewController.swift; sourceTree = "<group>"; };
 		8B1657BA1EB5AA9500DE254D /* ContactsDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactsDetailsTableViewController.swift; path = ../ContactsDetailsTableViewController.swift; sourceTree = "<group>"; };
+		8B1657BC1EB5B2F400DE254D /* AddNewContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewContactTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				8B1657A41EB57EE500DE254D /* SpeicherData.xcdatamodeld */,
 				8B1657B41EB5983E00DE254D /* ContactPerson.swift */,
 				8B1657B61EB59AC800DE254D /* ContactPersonDataSource.swift */,
+				8B1657BC1EB5B2F400DE254D /* AddNewContactTableViewController.swift */,
 			);
 			path = SpeicherData;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B1657BD1EB5B2F400DE254D /* AddNewContactTableViewController.swift in Sources */,
 				8B1657B51EB5983E00DE254D /* ContactPerson.swift in Sources */,
 				8B1657B71EB59AC800DE254D /* ContactPersonDataSource.swift in Sources */,
 				8B1657B91EB5A05C00DE254D /* AdressBookTableViewController.swift in Sources */,
