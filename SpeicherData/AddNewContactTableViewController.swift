@@ -13,6 +13,12 @@ class AddNewContactTableViewController: UITableViewController {
     @IBOutlet weak var txtFirstName: UITextField!
     @IBOutlet weak var txtLastName: UITextField!
     @IBOutlet weak var txtEmailAddress: UITextField!
+    @IBOutlet weak var txtAdresse: UITextField!
+    @IBOutlet weak var txtHausnummer: UITextField!
+    @IBOutlet weak var txtPLZ: UITextField!
+    @IBOutlet weak var txtStadt: UITextField!
+    @IBOutlet weak var txtTelefonnummer: UITextField!
+    @IBOutlet weak var txtKommentar: UITextField!
     
     var contact: ContactPerson!
     
@@ -32,7 +38,7 @@ class AddNewContactTableViewController: UITableViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "SaveSegue") {
-            contact = ContactPerson(withFirstName: txtFirstName.text!, lastName: txtLastName.text!, emailAddress: txtEmailAddress.text!)
+            contact = ContactPerson(withFirstName: txtFirstName.text!, lastName: txtLastName.text!, adresse: txtAdresse.text!, hausNummer: txtHausnummer.text!, plz: txtPLZ.text!, stadt: txtStadt.text!, telefonNummer: txtTelefonnummer.text!, emailAddress: txtEmailAddress.text!, kommentar: txtKommentar.text!)
         }
     }
    

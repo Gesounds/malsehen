@@ -27,7 +27,7 @@ class ContactPersonDataSource: NSObject {
             
         let sample1 = ContactPerson()
         contacts.add(sample1)
-        let sample2 = ContactPerson(withFirstName: "John", lastName: "Doe", emailAddress: "John.Doe@test.com")
+        let sample2 = ContactPerson(withFirstName: "John", lastName: "Dumm", adresse: "Reichlinger Straße", hausNummer: "2", plz: "40424", stadt: "Essen", telefonNummer: "0231 - 341435", emailAddress: "bert@aol.com", kommentar: "3 mal klingeln")
         addContact(contact: sample2)
             saveContacts()
         }

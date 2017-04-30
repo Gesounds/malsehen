@@ -44,7 +44,7 @@ class AdressBookTableViewController: UITableViewController {
 
         let cellContact = dataSource.contactAtIndex(index: indexPath.row)
         cell.textLabel?.text = cellContact.lastName + ", " + cellContact.firstName
-        cell.detailTextLabel?.text = cellContact.emailAddress
+        cell.detailTextLabel?.text = cellContact.adresse + " " + cellContact.hausNummer + ", " + cellContact.plz + " " + cellContact.stadt
         
 
         return cell
