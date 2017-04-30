@@ -60,4 +60,19 @@ class ContactPersonDataSource: NSObject {
     func contactAtIndex(index i: Int) -> ContactPerson {
         return contacts.object(at: i) as! ContactPerson
     }
+    
+    func deleteContact(at index: Int) {
+        contacts.removeObject(at: index)
+        //save
+        saveContacts()
+    }
+    
+    func moveContacts(from fromIndex: Int, to toIndex: Int) {
+        let fromContact = contactAtIndex(index: fromIndex)
+        let toContact = contactAtIndex(index: toIndex)
+        contacts.replaceObject(at: fromIndex, with: toContact)
+        contacts.replaceObject(at: toIndex, with: fromContact)
+        saveContacts()
+}
+
 }
