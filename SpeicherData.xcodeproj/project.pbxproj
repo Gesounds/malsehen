@@ -15,6 +15,7 @@
 		8B1657B51EB5983E00DE254D /* ContactPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1657B41EB5983E00DE254D /* ContactPerson.swift */; };
 		8B1657B71EB59AC800DE254D /* ContactPersonDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1657B61EB59AC800DE254D /* ContactPersonDataSource.swift */; };
 		8B1657B91EB5A05C00DE254D /* AdressBookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1657B81EB5A05C00DE254D /* AdressBookTableViewController.swift */; };
+		8B1657BB1EB5AA9500DE254D /* ContactsDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1657BA1EB5AA9500DE254D /* ContactsDetailsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8B1657B41EB5983E00DE254D /* ContactPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactPerson.swift; sourceTree = "<group>"; };
 		8B1657B61EB59AC800DE254D /* ContactPersonDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactPersonDataSource.swift; sourceTree = "<group>"; };
 		8B1657B81EB5A05C00DE254D /* AdressBookTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdressBookTableViewController.swift; path = ../AdressBookTableViewController.swift; sourceTree = "<group>"; };
+		8B1657BA1EB5AA9500DE254D /* ContactsDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactsDetailsTableViewController.swift; path = ../ContactsDetailsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		8B16579C1EB57EE500DE254D /* SpeicherData */ = {
 			isa = PBXGroup;
 			children = (
+				8B1657BA1EB5AA9500DE254D /* ContactsDetailsTableViewController.swift */,
 				8B1657B81EB5A05C00DE254D /* AdressBookTableViewController.swift */,
 				8B16579D1EB57EE500DE254D /* AppDelegate.swift */,
 				8B1657A11EB57EE500DE254D /* Main.storyboard */,
@@ -151,6 +154,7 @@
 				8B1657B91EB5A05C00DE254D /* AdressBookTableViewController.swift in Sources */,
 				8B1657A61EB57EE500DE254D /* SpeicherData.xcdatamodeld in Sources */,
 				8B16579E1EB57EE500DE254D /* AppDelegate.swift in Sources */,
+				8B1657BB1EB5AA9500DE254D /* ContactsDetailsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

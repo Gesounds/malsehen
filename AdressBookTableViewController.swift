@@ -86,14 +86,19 @@ class AdressBookTableViewController: UITableViewController {
     }
     */
 
-    /*
+   
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        if (segue.identifier == "ContactDetailsSegue"){
+            let selectedIndex = tableView.indexPathForSelectedRow?.row
+            let selectedContact = dataSource.contactAtIndex(index: selectedIndex!)
+            let destination = segue.destination as! ContactsDetailsTableViewController
+            destination.contact = selectedContact
+            
+          }
+   
 
+}
 }
